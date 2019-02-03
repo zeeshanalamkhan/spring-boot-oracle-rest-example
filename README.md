@@ -15,21 +15,4 @@ In this example, we will create a Spring Boot application that connects with our
 1. CrudRepository Interface
 CrudRepository is an interface which provided by Spring Framework itself. CrudRepository extends Spring Data Repository which is a central repository marker interface. CrudRepository provides the generic method for create, read, update, and delete (CRUD) operation.
 
-CrudRepository contains total 11 methods for CRUD operation, some of them are listed below that we will use in this application:
-
-<S extends T> S save(S entity): Save and update a given entity. Entity can not be null and the saved entity will never be null.
-
-Iterable<T> findAll(): Returns all entities.
-
-Optional<T> findById(ID id): Retrieves an entity by its ID. ID cannot be null.
-
-void deleteById(ID id): Deletes the entity with the given ID. ID cannot be null.
-
-2. Technologies Used
-Find the list of all technologies used in this application.
-
-Spring Tool Suite 4
-JDK 8
-Maven 3
-Spring-boot 2.1.2.RELEASE
-ORACLE Database
+CrudRepository contains total 11 methods for CRUD operation.
