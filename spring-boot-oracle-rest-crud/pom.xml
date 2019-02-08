@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<packaging>war</packaging>
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -39,7 +40,11 @@
 			<version>11.2.0</version>
 			<scope>runtime</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -51,4 +56,5 @@
 		</plugins>
 	</build>
 
+	<description>project to demonstarate crud opertaions using spring data and restfull web services</description>
 </project>
